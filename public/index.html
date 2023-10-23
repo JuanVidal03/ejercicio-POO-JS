@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    
+    <div class="title-container">
+        <h1>Añadir jugador</h1>
+    </div>
+
+<div class="content">
+
+    <div class="content-container">
+            <!-- formulario -->
+        <div class="card-container">
+            <div class="card">
+                <div class="card-header">
+                <div class="text-header">Registro de Jugadores</div>
+                </div>
+                <div class="card-body">
+                    <form action="#">
+
+                        <div class="form-group">
+                            <label for="username">Nombre y Apellido:</label>
+                            <input type="text" class="form-control" id="nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="username">Seleccione el Equipo:</label>
+                            <select name="equipos" id="equipos" class="selectEquipos">
+                                <option value="none">Selecciona un Equipo</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Edad:</label>
+                            <input type="text" id="edad" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Estatura:</label>
+                            <input type="text" class="form-control" id="estatura" placeholder="Estatura">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Nacionalidad:</label>
+                            <input type="text" id="nacionalidad" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Fecha de Nacimiento:</label>
+                            <input type="text" id="nacimiento" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label>url de la foto:</label>
+                            <input type="text" id="foto" class="form-control">
+                        </div>
+
+                        <input type="submit" class="btn" id="submit" value="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- render data -->
+        <div id="app"></div>
+
+    </div>
+</div>
+
+
+    
+
+
+    <script src="../src/index.js" type="module"></script>
+</body>
+</html>
